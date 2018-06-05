@@ -10,7 +10,7 @@ class Application
       @@items.each do |item, price|
 
        resp.write "#{item} #{price}\n"
-       binding.pry
+
      end
     else
       resp.write "Route not found"
