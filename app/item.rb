@@ -10,10 +10,11 @@ class Item
   end
 
   def self.items
+    save
     @@items
   end
 
-  def self.save
+  def save
     @@items << self
   end
 
