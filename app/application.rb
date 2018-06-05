@@ -7,7 +7,7 @@ class Application
     if req.path=="/items"
       resp.write "You requested the following items"
     elsif req.path=="/items/"
-      @@items.each do |item|
+      @@items.each do |item, price|
        resp.write "#{item} #{price}\n"
      end
     else
