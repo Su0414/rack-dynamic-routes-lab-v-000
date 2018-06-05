@@ -6,6 +6,10 @@ class Application
 
     if req.path=="/items/"
       resp.write "You requested the following items"
+      @@items.each do |item|
+        resp.write "#{item}\n"
+      end
+
     else
       resp.write "Route not found"
       resp.status = 404
@@ -23,3 +27,4 @@ class Application
  end
 
 end
+  
