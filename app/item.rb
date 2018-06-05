@@ -11,6 +11,10 @@ class Item
 
   def self.items
     @@items
-  end 
-  
+  end
+
+  def self.save
+    @@items << self
+  end
+
 end
