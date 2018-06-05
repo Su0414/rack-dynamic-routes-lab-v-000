@@ -7,7 +7,10 @@ class Item
   def initialize(name,price)
     @name = name
     @price = price
-    @@items << self
-    binding.pry
   end
+
+  def self.items
+    @@items
+  end 
+  
 end
