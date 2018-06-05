@@ -1,4 +1,4 @@
-require 'pry'
+
 class Item
   attr_accessor :name, :price
 
