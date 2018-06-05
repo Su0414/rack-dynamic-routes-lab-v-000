@@ -1,3 +1,5 @@
+require 'pry'
+
 class Application
 
   def call(env)
@@ -8,7 +10,9 @@ class Application
       resp.write "You requested the following items"
     elsif req.path=="/items/"
       @@items.each do |item, price|
+
        resp.write "#{item} #{price}\n"
+       binding.pry
      end
     else
       resp.write "Route not found"
